@@ -2,8 +2,6 @@
 provider "google" {
   region  = var.region
   project = var.project_name
-  #https://console.cloud.google.com/apis/credentials/serviceaccountkey
-  credentials = file(var.account_file_path)
 }
 
 resource "google_compute_address" "vault-ip-addresses" {
